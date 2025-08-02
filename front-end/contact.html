@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Formulaire de contact</h1>
+    <form onsubmit="envoyerMessage(event)">
+        <input type="text" name="nom" placeholder="Votre nom" required />
+
+        <select name="sujet" required>
+            <option value="">-- Choisir un sujet --</option>
+            <option value="bug">Signaler un bug</option>
+            <option value="question">Poser une question</option>
+            <option value="autre">Autre</option>
+        </select>
+
+        <input type="file" name="fichier" />
+
+        <textarea name="message" placeholder="Votre message" required></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+
+</html>
